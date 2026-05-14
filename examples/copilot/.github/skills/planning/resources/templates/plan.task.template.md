@@ -1,0 +1,18 @@
+## Task: <task_name>
+- Status: `READY` | `BLOCKED` | `DEPENDS_ON [task_<task_name>]`
+- Description: <max 100 words>
+- Files to change:
+  - <new/changed/deleted file>
+  - Notes: include prior patches, relevant git diffs, or pseudocode when available.
+- Tests to do:
+  - <test case list> or `no test`
+- DOD:
+  - Completion criteria:
+    - <objective acceptance criteria>
+  - QA checklist:
+    - Presentation project: <project/system under test>
+    - APIs to call: <endpoint/contracts>
+    - Scenarios:
+      - Component: <involved component>
+      - Expected results: <observable behavior>
+      - Extra notes: <data setup, edge cases>
