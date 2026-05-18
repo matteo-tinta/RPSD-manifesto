@@ -12,7 +12,7 @@ See [README.md](README.md#stack)
 
 ### Folders
 - /features: dump here research, plan artifacts, subdivided by feature-name
-- /discovery: research discoveries (agents memory) - no feature artifacts here just discovery files
+- /discovery: research discoveries (agents memory) -> no feature artifacts here just discovery files
 - /codebase: the actual app
 - /docs: project docs
 

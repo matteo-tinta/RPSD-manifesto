@@ -36,6 +36,29 @@ Is task moving up/down already implemented? What is the feasibility of adding up
 2. Logic Layer: No backend logic for task ordering/reordering exists. State management in [codebase/src/App.js](codebase/src/App.js) only handles add/delete/save operations.
 3. Data Model: No task data models, types, or ordering fields (order/position/index) exist in the codebase.
 
+
+
+## Implementation Summary (2026-05-18)
+
+### Key Changes in [codebase/src/App.js](codebase/src/App.js)
+
+1. **Task Movement Functions:**
+	- Added `moveTaskUp(index)` and `moveTaskDown(index)` functions.
+	- Pattern: clone tasks array, swap elements, update state with `setTasks`, persist with `saveTasks` (mirrors `deleteTask`).
+
+2. **UI Enhancements:**
+	- Imported `ChevronUp` and `ChevronDown` icons from `tabler-icons-react`.
+	- Added two `ActionIcon` buttons (up/down) per task card, placed before Trash icon.
+	- Used `disabled` prop for boundary checks (first/last task cannot move further).
+	- Grouped all three action icons in a `Group spacing={0}` for compact layout.
+
+3. **Patterns Used:**
+	- Followed existing state update and persistence patterns.
+	- No changes to task data model; order is managed by array index.
+
+4. **QA Results:**
+	- All scenarios passed: up/down movement, boundary disabling, localStorage persistence, Trash icon compatibility.
+
 ---
 
 ## Source Links
