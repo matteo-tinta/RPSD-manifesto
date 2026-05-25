@@ -10,7 +10,7 @@ We do not ask an agent to discover, decide, validate, and implement in one conti
 
 Instead, work is split into isolated phases, each producing artifacts that can be reviewed, corrected, reused, or discarded.
 
-**RPSD is designed for significant scope**, such as large refactors, new systems, or architectural shifts. It is not suited for small, isolated changes.
+**RPSD is designed for significant scope**: a feature size or an important refactor is ideal. Everything smaller than this should involve RPSD
 
 **RPSD is tool-agnostic**. It does not prescribe agents, models, IDEs, or platforms. Any workflow that supports artifact-based handoffs and human review can implement it.
 
